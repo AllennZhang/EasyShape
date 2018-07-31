@@ -2,9 +2,7 @@ package com.hipac.webviewtest.view;
 
 import android.content.res.Resources;
 
-/**
- * Created by sheena on 17/8/14.
- */
+
 
 public class DensityUtil {
     float density;

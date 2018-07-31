@@ -15,9 +15,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
 
-/**
- * Created by sheena on 17/7/3.
- */
+
 
 public class BorderTextView extends AppCompatTextView {
     private float mBorderRadius;
