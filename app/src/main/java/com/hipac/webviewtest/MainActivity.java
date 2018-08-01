@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                  WebViewActivity.startActivity(this,"https://mp.weixin.qq.com/s/R4xmQvlGENAf8VOKwPFGkg");
                 break;
             case R.id.video:
+                  prePare();
 //                startActivity(new Intent(MainActivity.this,VideoActivity.class));
                 break;
             case R.id.dialogShow:
@@ -84,4 +85,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    private void prePare() {
+
+    }
+
+
 }

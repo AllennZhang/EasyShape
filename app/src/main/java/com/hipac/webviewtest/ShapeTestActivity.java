@@ -53,12 +53,12 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_1:
+            case R.id.btn_1:  //标准圆角矩形
                 EasyShape bg = new EasyShape(view);
                 bg.buildDashRectangle(DensityUtil.dp2px(5),2,Color.parseColor("#ed3a4a"),Color.WHITE,20,10);
 //                bg.buildRectangle(DensityUtil.dp2px(5),DensityUtil.dp2px(1), Color.parseColor("#ed3a4a"),Color.WHITE);
                 break;
-            case R.id.btn_2:
+            case R.id.btn_2: //标准渐变圆角矩形
                 EasyShape bg2 = new EasyShape(view);
                 new EasyShape.Builder(bg2)
                         .cornerRadius(DensityUtil.dp2px(5))
@@ -69,7 +69,7 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
                         .gradientColor(Color.GREEN,Color.RED)
                         .buildRectangle();
                 break;
-            case R.id.btn_3:
+            case R.id.btn_3: //径向渐变圆角矩形
                 EasyShape bg3 = new EasyShape(view);
                 new EasyShape.Builder(bg3)
                         .cornerRadius(DensityUtil.dp2px(5))
@@ -81,7 +81,7 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
                         .dashWidthAndGap(DensityUtil.dp2px(6),DensityUtil.dp2px(4))
                         .buildRectangle();
                 break;
-            case R.id.btn_4:
+            case R.id.btn_4: //扫描渐变圆角矩形
                 EasyShape bg4 = new EasyShape(view);
                 new EasyShape.Builder(bg4)
                         .cornerRadius(DensityUtil.dp2px(5))
@@ -94,7 +94,7 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
                         .gradientColors(new int[]{Color.GREEN,Color.RED,Color.BLUE,Color.YELLOW})
                         .buildRectangle();
                 break;
-            case R.id.btn_5:
+            case R.id.btn_5: //自定义圆角矩形
                 EasyShape bg5 = new EasyShape(view);
                 new EasyShape.Builder(bg5)
                         .cornerRadius(DensityUtil.dp2px(5))
@@ -107,11 +107,11 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
                         .eachCornerRadius(DensityUtil.dp2px(16),0,DensityUtil.dp2px(16),0)
                         .buildCornerRect();
                 break;
-            case R.id.btn_6:
+            case R.id.btn_6: //标准圆形
                 EasyShape bg6= new EasyShape(view);
                 bg6.buildOval(0,0,DensityUtil.dp2px(1),Color.parseColor("#ed3a4a"),Color.WHITE);
                 break;
-            case R.id.btn_7:
+            case R.id.btn_7: //标准渐变圆形
                 new EasyShape(view).buildGradientOval(100,100,1,Color.parseColor("#ed3a4a"),Color.GREEN,Color.RED);
 //                EasyShape bg7 = new EasyShape(view);
 //                new EasyShape.Builder(bg7)
@@ -123,7 +123,7 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
 //                        .gradientOrientation(GradientDrawable.Orientation.LEFT_RIGHT)
 //                        .buildOval();
                 break;
-            case R.id.btn_8:
+            case R.id.btn_8: //径向渐变圆形
                 EasyShape bg8 = new EasyShape(view);
                 new EasyShape.Builder(bg8)
                         .strokeWidth(1)
@@ -134,7 +134,7 @@ public class ShapeTestActivity  extends AppCompatActivity implements View.OnClic
                         .gradientRadius(view.getMeasuredHeight()*0.5f)
                         .buildOval();
                 break;
-            case R.id.btn_9:
+            case R.id.btn_9: //扫描渐变圆形
                 EasyShape bg9 = new EasyShape(view);
                 new EasyShape.Builder(bg9)
                         .strokeWidth(1)
